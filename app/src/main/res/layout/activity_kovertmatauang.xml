@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farhan.aritmatika.kovertmatauang">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konvert Mata Uang"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_margin="15dp"/>
+
+    <RadioGroup
+        android:id="@+id/Radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/Dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dolar"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="200dp"/>
+
+        <RadioButton
+            android:id="@+id/Euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Euro"
+            android:textSize="15sp"
+            android:layout_marginTop="-31dp"
+            android:layout_marginLeft="280dp"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/Input"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="  Masukan nilai rupiah"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberSigned"/>
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Process"/>
+
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="12dp"/>
+
+</RelativeLayout>
