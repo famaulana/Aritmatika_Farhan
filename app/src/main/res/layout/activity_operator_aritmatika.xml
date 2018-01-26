@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.farhan.aritmatika.OperatorAritmatika">
+
+    <RelativeLayout
+        android:layout_width="344dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/txtawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Masukkan angka pertama" />
+
+        <EditText
+            android:id="@+id/editawal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtawal"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editawal"
+            android:text="Masukkan Angka Kedua" />
+
+        <EditText
+            android:id="@+id/editkedua"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txtoperator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editkedua"
+            android:text="Pilih Operator" />
+
+        <Button
+            android:id="@+id/btnjumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtoperator"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnkurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtoperator"
+            android:layout_toEndOf="@+id/btnjumlah"
+            android:layout_toRightOf="@+id/btnjumlah"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/btnkali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtoperator"
+            android:layout_toEndOf="@+id/btnkurang"
+            android:layout_toRightOf="@+id/btnkurang"
+            android:text="X" />
+
+        <Button
+            android:id="@+id/btnbagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtoperator"
+            android:layout_toEndOf="@+id/btnkali"
+            android:layout_toRightOf="@+id/btnkali"
+            android:text=":" />
+
+        <TextView
+            android:id="@+id/txthasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnjumlah"
+            android:text="Hasil" />
+
+        <EditText
+            android:id="@+id/edithasil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

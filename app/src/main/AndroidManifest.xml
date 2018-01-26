@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".kovertmatauang"></activity>
-        <activity android:name=".luaspersegi">
+        <activity android:name=".kovertmatauang">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Kalkulator"></activity>
+        <activity android:name=".luaspersegi"></activity>
+        <activity android:name=".OperatorAritmatika"></activity>
     </application>
 
 </manifest>
